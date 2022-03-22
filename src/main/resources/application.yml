@@ -1,0 +1,24 @@
+server:
+  port: 16080
+  shutdown: graceful
+
+logging:
+  pattern.console:
+  file:
+    #path 또는 name 둘 증 하나만 있어야함
+    name: ../logs/spring.log                                                                
+  logback:
+    rollingpolicy:
+      max-file-size: 1GB
+
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        #bootstrap: false
+        native:
+          search-locations: classpath:/config_

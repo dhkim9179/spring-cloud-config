@@ -1,0 +1,47 @@
+############################################################################################### 공통 설정 시작
+#actuator 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "refresh, info, health"
+
+#서버 설정
+server:
+  shutdown: graceful
+
+---
+spring:
+  profiles:
+    active: local, dev
+  
+  #db
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    #url: jdbc:log4jdbc:mariadb://192.168.35.230:3306/rms
+    url: jdbc:log4jdbc:mariadb://127.0.0.1:3306/tmp
+    username: root
+    password: kscc1212!
+
+#mybatis
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath*:com/dhkim/prj/**/*Mapper.xml
+  type-aliases-package: com.dhkim.prj
+  
+#로깅설정
+logging:
+  charset:
+    console: utf8
+    file: utf8
+  group:
+    application: com.dhkim.prj
+  level:
+    jdbc.sqltiming: INFO
+    jdbc.resultsettable: INFO
+    jdbc.sqlonly: OFF
+    jdbc.audit: OFF
+    jdbc.resultset: OFF
+    jdbc.connection: OFF
+    application: DEBUG
+    root: INFO

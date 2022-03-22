@@ -1,0 +1,10 @@
+spring:
+  config.activate.on-profile: local
+    
+server:
+  port: 16082
+  servlet:
+    context-path: /admin
+    encoding:
+      charset: utf-8
+      force-response: true
