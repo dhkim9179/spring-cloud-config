@@ -70,7 +70,7 @@ _markdown 연습_
 ***
 
 # 취소선
-~~markdown연습 ~~
+~~markdown연습~~
 
 # 체크박스
 * [x] 체크박스
