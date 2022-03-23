@@ -8,9 +8,8 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.dhkim</groupId>
-	<artifactId>prj</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.dhkim.prj</groupId>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 	<name>myConfigServer</name>
 	<description>Dhkim Test Config Server Project</description>
@@ -51,4 +50,5 @@
 		</plugins>
 	</build>
 
+	<artifactId>config</artifactId>
 </project>
