@@ -18,10 +18,9 @@ spring:
   #db
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    #url: jdbc:log4jdbc:mariadb://192.168.35.230:3306/rms
-    url: jdbc:log4jdbc:mariadb://127.0.0.1:3306/tmp
+    url: jdbc:log4jdbc:mariadb://172.105.236.96:3306/dhk
     username: root
-    password: kscc1212!
+    password: qwer1234
 
 #mybatis
 mybatis:
