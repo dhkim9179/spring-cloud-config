@@ -14,11 +14,12 @@ logging:
 spring:
   application:
     name: configserver
-  profiles:
-    active: native
+  #profiles:
+    #active: native
   cloud:
     config:
       server:
-        #bootstrap: false
-        native:
-          search-locations: classpath:/config_
+        git:
+          uri: https://github.com/dhkim9179/git-config
+        #native:
+          #search-locations: classpath:/config_

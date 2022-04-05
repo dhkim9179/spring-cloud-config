@@ -1,6 +1,3 @@
-spring:
-  config.activate.on-profile: local, dev
-    
 server:
   port: 16082
   servlet:
@@ -8,3 +5,7 @@ server:
     encoding:
       charset: utf-8
       force-response: true
+      
+application:
+  misc:
+    test: 1234567890aadmin      
